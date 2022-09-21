@@ -1,9 +1,14 @@
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
-  
+  layout false
+  # setup erb
+  configure do
+    set :views, 'app/views'
+  end
   # Add your routes here
-  get "/" do
-    { message: "Good luck with your project!" }.to_json
+  get '/' do
+    erb :test
   end
 
 end
+ 
