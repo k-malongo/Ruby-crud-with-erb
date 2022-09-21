@@ -12,8 +12,7 @@ class ApplicationController < Sinatra::Base
 
   # Add your routes here
   get '/' do
-    binding.pry
-    erb :test
+    "welcome"
   end
 
 end
