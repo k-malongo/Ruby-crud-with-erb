@@ -12,7 +12,7 @@ class ApplicationController < Sinatra::Base
 
   # Add your routes here
   get '/' do
-    "welcome"
+    erb :welcome
   end
 
 end
